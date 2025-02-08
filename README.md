@@ -52,68 +52,23 @@ Proje kapsamında:
 
 ---
 
-## **Kurulum ve Çalıştırma**
-
-1. **Gereksinimleri Yükleyin:**
-   ```bash
-   pip install numpy matplotlib
-   ```
-
-2. **Proje Kodunu Çalıştırın:**
-   ```bash
-   python RegressionProblem.py
-   ```
-
-3. **Çıktılar:**
+## **Çıktılar**
    - İterasyon başına maliyet fonksiyonunun değeri.
    - Özellikler ile hedef değişkenin scatter plot'ları ve tahmin fonksiyonları.
    - Modelin tahmin ettiği ağırlıklar (\(w\)) ve bias (\(b\)).
 
 ---
 
-## **Sonuçlar**
-
-Elde edilen model, verilen sentetik veriler üzerinde aşağıdaki tahminleri gerçekleştirmiştir:
-
-- Tahmin edilen **ağırlık katsayıları (\(w\))**:
-  ```plaintext
-  [0.05, 0.8, 1.2, -2.0, 0.5]
-  ```
-
-- Tahmin edilen **bias (\(b\))**:
-  ```plaintext
-  50.0
-  ```
-
-- İterasyon başına MSE grafiği, modelin öğrenme sürecini göstermektedir.
-
-### **Görselleştirme Örnekleri**
+### **Elde Edilen Grafikler**
 
 Her bir özelliğin (örneğin "Nüfus") tahmin fonksiyonu scatter plot üzerinde gösterilmiştir. Aşağıdaki grafiklerde modelin doğruluğunu analiz edebilirsiniz:
 
 1. Özelliklerin scatter plot'u ve tahmin fonksiyonları:
-   ![Özelliklerin scatter plot'u](https://via.placeholder.com/800x400)
+   ![Scatter Grafiği](images/scatter.png)
+![Prediction_Grafiği](images/scatter_with_predictions.png)
 
-2. İterasyon–Maliyet Grafiği:
-   ![İterasyon-Maliyet Grafiği](https://via.placeholder.com/800x400)
-
----
-
-## **Yapılabilecek İyileştirmeler**
-
-- **Model Performansı:** Verinin doğrusal olmayan yapısı varsa, polynomial regression gibi doğrusal olmayan modeller denenebilir.
-- **Özellik Mühendisliği:** Daha anlamlı özellikler oluşturmak için mevcut değişkenler dönüştürülebilir (log, kare, vb.).
-- **Regularization:** Ridge veya Lasso gibi düzenlileştirme yöntemleri eklenerek model genelleştirilebilir.
-- **Model Değişimi:** Random Forest veya Gradient Boosting gibi daha karmaşık modeller kullanılabilir.
+3. İterasyon–Maliyet Grafiği:
+   ![İterasyon-Maliyet Grafiği](images/iteration-cost.png)
 
 ---
 
-## **Geliştirici**
-
-Bu proje, regresyon modelleri ve gradient descent algoritmasının temel prensiplerini uygulamak için tasarlanmıştır.
-
-Herhangi bir sorunuz veya öneriniz varsa, lütfen iletişime geçmekten çekinmeyin!
-
----
-
-Bu örnek `README.md` dosyası, projenin detaylarını açık ve profesyonel bir şekilde açıklamak için hazırlanmıştır. Eğer eklemek veya değiştirmek istediğiniz başka bir şey varsa, düzenleyebiliriz!
